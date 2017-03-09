@@ -1,5 +1,6 @@
 <center><h2>Cookie，WebStorage对比总结</h2></center>
-******
+******  
+ <center>&copy;runningapple</center>
 ####Cookie  
 1. **简介**  
 Cookie，指某些网站为了辨别用户身份而存储在用户本地终端上的数据。  
@@ -73,4 +74,5 @@ Web Storage分为两种，*Local Storage* 和 *Session Storage*。
 <th>键值对集合，操作简单</th>
 <th>键值对集合，操作简单</th>
 </tr>
-</table>
+</table>  
+  <center>E-mail:runningapple8@gmail.com</center>
