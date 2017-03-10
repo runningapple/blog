@@ -65,8 +65,8 @@ Web Storage分为两种，*Local Storage* 和 *Session Storage*。
 <tr>
 <th>与服务端通信</th>
 <th>每次都会包含在 HTTP 请求头中</th>
-<th>客户端保存，由脚本选择性提交数据</th>
-<th>客户端保存，由脚本选择性提交数据</th>
+<th>客户端保存，根据实际功能可用提交需要的数据</th>
+<th>客户端保存，根据实际功能可用提交需要的数据</th>
 </tr>
 <tr>
 <th>易用性</th>
