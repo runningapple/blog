@@ -9,7 +9,7 @@ HTTP请求信息是由一个简单的文本结构组成。
 <pre>
 <code>
 GET / HTTP/1.1
-Accept: \*/*
+Accept: */*
 Accept-Language: en-gb
 Accept-Encoding: gzip, deflate
 User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64; Trident/7.0; rv:11.0) like Gecko
@@ -41,7 +41,7 @@ Content-Length: 14990
 第一行显示的是状态码，表示 HTTP 请求成功。返回 200 表示请求被正确接收处理，并且所请求的内容已经返回给客户端了。剩下的几行信息是用来描述服务端所返回的数据格式或者类型，或者处理方式等。例如，**Content-Type: text/html; charset=utf-8** 表示返回的内容是 text/html 格式。  
 响应信息的表头用两个回车换行结束，即（CRLF，carriage return, line feed），两个回车换行后更着的内容就是客户端所请求的内容。  
   
-**注意**，像图片，视频等内容并不会直接嵌入在页面中，而是指定用 HTML 中的 \<img> 等标签代替，使图片内容，和普通的文本内容分开，直到浏览器渲染时遇到了 \<img> 标签，遇到之后，浏览器就会去找对应的图片信息是否已经被加载到了内存中或者保存到了 cache 里了，如果找到了则将图片嵌入到页面中。如果浏览器没有找到对应的图片，则会另外发起一个 HTTP 请求，来请求图片。
+**注意**，像图片，视频等内容并不会直接嵌入在页面中，而是指定用 HTML 中的 &lt;img> 等标签代替，使图片内容，和普通的文本内容分开，直到浏览器渲染时遇到了 &lt;img> 标签，遇到之后，浏览器就会去找对应的图片信息是否已经被加载到了内存中或者保存到了 cache 里了，如果找到了则将图片嵌入到页面中。如果浏览器没有找到对应的图片，则会另外发起一个 HTTP 请求，来请求图片。
 ******  
 ####2. AJAX  
 AJAX 是一种可以让 HTTP 请求不会导致页面整体刷新的技术。
@@ -54,9 +54,9 @@ AJAX 是一种可以让 HTTP 请求不会导致页面整体刷新的技术。
 AJAX 主要的功能已经现在的绝大数浏览器的 XmlHttpRequest 对象里实现。下面展示一段用原生 javascript 使用 AJAX 技术发送数据。  
 <pre>
 <code>
-\<script type="text/javascript"\>
+&lt;script type="text/javascript">
 function AddNumbers()
-\{
+{
     // 创建一个 HTTP 对象实例
     var xmlHttp = new XMLHttpRequest();
     var value1 = document.getElementById("txtValue1").value;
@@ -70,17 +70,17 @@ function AddNumbers()
     // 将服务端发送过来的数据添加到对应的 HTML 元素里。
     result.innerHTML = xmlHttp.responseText;
 }
-\</script\>
-\<form\>
-    \<input id="txtValue1"/\>
-   \<input id="txtValue2"/\>
-    \<input onclick="AddNumbers();"type="button" value="Add"/\>
-    \<p>Result:\</p\>
-    \<span id="spanResult">\</span\>
-\</form\>
+&lt;/script>
+&lt;form>
+    &lt;input id="txtValue1"/>
+   &lt;input id="txtValue2"/>
+    &lt;input onclick="AddNumbers();"type="button" value="Add"/>
+    &lt;p>Result:&lt;/p>
+    &lt;span id="spanResult">&lt;/span>
+&lt;/form>
 </code>
 </pre>  
-另外，我们现在一般都用
+另外，我们现在一般都用 JavaScript 库实现的 AJAX 。比如 JQuery。
 
 
 
