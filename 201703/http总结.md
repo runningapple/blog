@@ -1,5 +1,7 @@
 <center><h2>HTTP协议总结</h2></center>
 ******  
+<center>&copy;runningapple</center>  
+
 ####1. HTTP 协议简介
 HTTP 协议是从 1990 年开始背广泛应用于**客户端-服务端**模式网络的协议。在任何时候，只要你上网打开网页，你的浏览器就会向服务器发送 HTTP 请求信息。服务器便会处理请求，然后返回响应信息，响应信息里包含有客户端所请求的信息内容。  
 ******  
@@ -80,8 +82,9 @@ function AddNumbers()
 &lt;/form>
 </code>
 </pre>  
-另外，我们现在一般都用 JavaScript 库实现的 AJAX 。比如 JQuery。
-
+另外，我们现在一般都用 JavaScript 库实现的 AJAX 。比如 JQuery。  
+  
+<center>E-mail:runningapple8@gmail.com</center>
 
 
 
