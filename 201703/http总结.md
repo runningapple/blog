@@ -35,7 +35,7 @@ Expires: -1
 Content-Type: text/html; charset=utf-8
 Content-Length: 14990
 
-<!DOCTYPE html>  <html>...
+&lt;!DOCTYPE html>  &lt;html>...
 </code>
 </pre>  
 第一行显示的是状态码，表示 HTTP 请求成功。返回 200 表示请求被正确接收处理，并且所请求的内容已经返回给客户端了。剩下的几行信息是用来描述服务端所返回的数据格式或者类型，或者处理方式等。例如，**Content-Type: text/html; charset=utf-8** 表示返回的内容是 text/html 格式。  
