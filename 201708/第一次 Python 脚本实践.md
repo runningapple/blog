@@ -40,7 +40,8 @@ def replaceFileContent(fileName, targetContent, replaceContent):      #方法（
     tempFile = codecs.open(fileName, "wb", 'UTF-8')                   #已二进制,写入，UTF-8编码方式打开一个新的文件
     tempFile.write(content)                                           #写入替换后全部的内容到新打开的文件中
     tempFile.close()                                                  #关闭文件
-    os.system('sed -i "s/\r//g" ' + fileName)                         #过滤文件中的 ^M 字符，该字符其实是回车符,因为 UNIX 下一般只有一个0x0A表示换行，Windows 下一般都是 0x0D 和 0x0A 两个字符，所以 Linux 下会多出一个 0x0A 字符，看到的结果就是每行后面都有一个 ^M 字符。所以需要过滤一下。
+    #过滤文件中的 ^M 字符，该字符其实是回车符,因为 UNIX 下一般只有一个0x0A表示换行，Windows 下一般都是 0x0D 和 0x0A 两个字符，所以 Linux 下会多出一个 0x0A 字符，看到的结果就是每行后面都有一个 ^M 字符。所以需要过滤一下。
+    os.system('sed -i "s/\r//g" ' + fileName)                         
     # os.system('dos2unix '+fileName) 需要服务器支持该命令，这个命令可以将文件内容转成适合 UNIX 格式的文件内容。
 
 def App1():
