@@ -35,4 +35,10 @@ tags: [摄影,教程,后期,分身术]
 5. 接着我们选择画笔工具，选择黑色。
 ![](http://wx1.sinaimg.cn/mw690/ad108d28gy1fhlspg8mffj21gh0qve81.jpg "选择画笔工具，选择颜色")  
 6. 然后我们可以调整一下画笔的大小，硬度等。
-![](http://wx1.sinaimg.cn/mw690/ad108d28gy1fhlspesiuij21g00sue81.jpg "蒙版图层")  
+![](http://wx1.sinaimg.cn/mw690/ad108d28gy1fhlspesiuij21g00sue81.jpg "调整笔刷")  
+7. 最后我们就只要用笔刷在人物覆盖住的地方用画笔来刷刷就可以看到后面那个图层的人物隐隐约约的出现了。  
+![](http://wx2.sinaimg.cn/mw690/ad108d28gy1fhlsphmkjpj217v0q4e81.jpg)  
+8. 接着我们就可以把人物全部刷出来了。最后记得刷完之后，记得合并图层，这样我们就得到一张可以发朋友圈的“分身术”照片了。  
+![](http://wx4.sinaimg.cn/mw690/ad108d28gy1fhlspiwhvsj217v0q4e81.jpg)  
+![](http://wx1.sinaimg.cn/mw690/ad108d28gy1fhlspk5op1j21h50qke81.jpg "合并图层")  
+后记：会做两个分身，那么三个，四个，十个都是同样的做法，赶快动手去试试吧。
