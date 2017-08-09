@@ -5,7 +5,6 @@ comments: false
 categories: R&D
 tags: [R&D,技术,研发,编码]
 ---
-![](http://wx3.sinaimg.cn/mw690/ad108d28gy1fhdpovts1kj20rs0deak1.jpg)  
 前段时间看到项目前端框架中的上传文件部分用到了 base64 。记得上大学时曾在网络原理的书中看到这个玩意，当初以为是用来加密的，也就没有深究。而如今又遇到，不去揭开它的神秘的面纱，心里特别难受。下面就来一步步揭开 base64 的面纱。  
 
 什么是 base64 ？
