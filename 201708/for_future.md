@@ -25,6 +25,7 @@
 * 学会小程序开发（done）
 * 学会用 H5 制作小程序
 * express 服务端开发
+* jvm
 * java + spring 方向深入学习
 * MySQL
 * Memcache
