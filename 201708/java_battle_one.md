@@ -16,3 +16,5 @@ tags: []
 * 原码，补码
 * 局部变量 栈
 * 接口里的变量都隐式声明为public static final,而接口里的方法默认情况下访问权限为public。
+* java 文件移动 https://javablog.net/pages/72/java-mobile-file-to-another-directory.html
+* 修饰符
