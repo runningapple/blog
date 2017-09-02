@@ -6,11 +6,11 @@ categories: R&D
 tags: []
 ---
 
-* 数组是存储在堆上的对象。数组拷贝。什么时候用数组什么时候用list
-* strictfp
+* ~~数组是存储在堆上的对象。数组拷贝。什么时候用数组什么时候用list~~
+* ~~strictfp~~
 * synchronized
 * throw 和 throws
-* transient 修饰不要序列化的字段
+* ~~transient 修饰不要序列化的字段~~
 * volatile
 * 包和类引用
 * 原码，补码
