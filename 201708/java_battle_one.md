@@ -28,3 +28,4 @@ tags: []
 * 序列化 反序列化
 * 网络编程
 * JAVA8
+* Serializable ? serialVersionUID  Externalizable 
