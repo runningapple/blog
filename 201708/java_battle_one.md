@@ -31,7 +31,7 @@ tags: []
 * Serializable ? serialVersionUID  Externalizable 
 * ~~arraylist trimToSize~~
 * 编译器和虚拟机
-* switch case 支持枚举和String？原理
+* ~~switch case 支持枚举和String？原理~~
 * 可变参数
 * copy clone
 * 内部类
