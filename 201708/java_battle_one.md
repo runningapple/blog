@@ -38,8 +38,9 @@ tags: []
 * 代理
 * 日志
 * 位运算 
-http://www.matrix67.com/blog/archives/263
-http://www.matrix67.com/blog/archives/264
-http://www.matrix67.com/blog/archives/266
-http://www.matrix67.com/blog/archives/268
-http://graphics.stanford.edu/~seander/bithacks.html#OperationCounting
+    http://www.matrix67.com/blog/archives/263
+    http://www.matrix67.com/blog/archives/264
+    http://www.matrix67.com/blog/archives/266
+    http://www.matrix67.com/blog/archives/268
+    http://graphics.stanford.edu/~seander/bithacks.html#OperationCounting
+* 文件系统 FAT HPFS NTFS EXT NFS
