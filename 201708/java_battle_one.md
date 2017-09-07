@@ -37,3 +37,9 @@ tags: []
 * 内部类
 * 代理
 * 日志
+* 位运算 
+http://www.matrix67.com/blog/archives/263
+http://www.matrix67.com/blog/archives/264
+http://www.matrix67.com/blog/archives/266
+http://www.matrix67.com/blog/archives/268
+http://graphics.stanford.edu/~seander/bithacks.html#OperationCounting
