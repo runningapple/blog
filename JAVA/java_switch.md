@@ -5,7 +5,7 @@ comments: false
 categories: R&D
 tags: []
 ---
-在 Java1.7 版本之前，switch case 能够用来比较 byte, short, int, char enmu（枚举类型是通过该常量在所有枚举常量中的序号进行比较的）。在 Java1.7 版本之后 switch case 增加了对 String 的比较能力。像 byte, short, char 等都是通过数值及转换成对应的数值进行比较的，那么 String 又是如何比较的呢？为了一探究竟，今个儿就看看编译后的代码是怎么样的。  
+在 Java1.7 版本之前，switch case 能够用来比较 byte, short, int, char enum（枚举类型是通过该常量在所有枚举常量中的序号进行比较的）。在 Java1.7 版本之后 switch case 增加了对 String 的比较能力。像 byte, short, char 等都是通过数值及转换成对应的数值进行比较的，那么 String 又是如何比较的呢？为了一探究竟，今个儿就看看编译后的代码是怎么样的。  
 
 初始代码：
 ```java
