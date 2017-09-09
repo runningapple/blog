@@ -9,7 +9,6 @@ tags: []
 * ~~数组是存储在堆上的对象。数组拷贝。什么时候用数组什么时候用list~~
 * ~~strictfp~~
 * synchronized
-* throw 和 throws
 * ~~transient 修饰不要序列化的字段~~
 * volatile
 * 包和类引用
@@ -21,7 +20,7 @@ tags: []
 * 修饰符
 * ~~String, StringBuilder, StringBuffer~~
 * 正则表达式
-* 异常 自定义异常
+* 异常 自定义异常 throw 和 throws
 * 封装 继承 多态 重写 重载 反射
 * 集合 集合遍历
 * 泛型
@@ -44,3 +43,11 @@ tags: []
     http://www.matrix67.com/blog/archives/268
     http://graphics.stanford.edu/~seander/bithacks.html#OperationCounting
 * 文件系统 FAT HPFS NTFS EXT NFS
+* List iterator
+* vector arrayList 同步，异步
+* 自定义类需要实现hashCode来使用set?
+* 红黑树
+* treeSet 存储自定义对象需要实现 comparable ?
+* comparator 和 comparable
+* 视图
+* 桥方法
