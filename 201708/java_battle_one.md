@@ -50,4 +50,5 @@ tags: []
 * treeSet 存储自定义对象需要实现 comparable ?
 * comparator 和 comparable
 * 视图
-* 桥方法
+* ~~桥方法~~
+* linux 命令学习
