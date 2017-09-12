@@ -22,7 +22,7 @@ tags: []
 * 正则表达式
 * 异常 自定义异常 throw 和 throws
 * 封装 继承 多态 重写 重载 反射
-* 集合 集合遍历
+* 集合 集合遍历 https://docs.oracle.com/javase/8/docs/technotes/guides/collections/overview.html
 * ~~泛型~~
 * 序列化 反序列化
 * 网络编程
