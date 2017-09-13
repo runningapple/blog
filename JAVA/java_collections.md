@@ -10,4 +10,4 @@ tags: []
 
 ### 集合接口
 * Collection
-在 Java 类库中，集合类的基本接口是 Collection 接口。Collection 只表示一组对象，这些对象也称之为 collection 的元素。一些 collec 允许有重复的元素，而外一些则不允许。一些是 collection 是有序的，另外一些则是无序的。JDK 不提供此接口的任何直接实现。它提供更具体的子接口实现（如 Set 和 List）。  
+在 Java 类库中，集合类的基本接口是 Collection 接口。Collection 只表示一组对象，这些对象也称之为 collection 的元素。一些 collec 允许有重复的元素，而外一些则不允许。一些是 collection 是有序的，另外一些则是无序的。JDK 不提供此接口的任何直接实现。它在子接口中提供更具体的实现（如 Set 和 List）。  
