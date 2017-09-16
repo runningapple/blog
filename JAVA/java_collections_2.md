@@ -1,5 +1,5 @@
 ---
-title: JAVA 拾遗之集合接口2
+title: JAVA 拾遗之 ArrayList
 date: 2017-09-11 22:57:58
 comments: false
 categories: R&D
@@ -156,15 +156,12 @@ clear 方法真的是言简意赅，直接将数组中的所有对象引用清�
 indexOf 方法说白了就是第二种删除操作的第一步。  
 
 #### ensureCapacity  
-
+如有必要，增加此 ArrayList 实例的容量，以确保它至少能够容纳最小容量参数所指定的元素数。  
+源码：  
 ```java
 public void ensureCapacity(int minCapacity) {
     int minExpand = (elementData != EMPTY_ELEMENTDATA)
-        // any size if real element table
-        ? 0
-        // larger than default for empty table. It's already supposed to be
-        // at default size.
-        : DEFAULT_CAPACITY;
+        ? 0 : DEFAULT_CAPACITY;
 
     if (minCapacity > minExpand) {
         ensureExplicitCapacity(minCapacity);
@@ -182,46 +179,32 @@ private void ensureCapacityInternal(int minCapacity) {
 private void ensureExplicitCapacity(int minCapacity) {
     modCount++;
 
-    // overflow-conscious code
     if (minCapacity - elementData.length > 0)
         grow(minCapacity);
 }
 
-/**
-    * The maximum size of array to allocate.
-    * Some VMs reserve some header words in an array.
-    * Attempts to allocate larger arrays may result in
-    * OutOfMemoryError: Requested array size exceeds VM limit
-    */
 private static final int MAX_ARRAY_SIZE = Integer.MAX_VALUE - 8;
 
-/**
-    * Increases the capacity to ensure that it can hold at least the
-    * number of elements specified by the minimum capacity argument.
-    *
-    * @param minCapacity the desired minimum capacity
-    */
 private void grow(int minCapacity) {
-    // overflow-conscious code
     int oldCapacity = elementData.length;
     int newCapacity = oldCapacity + (oldCapacity >> 1);
     if (newCapacity - minCapacity < 0)
         newCapacity = minCapacity;
     if (newCapacity - MAX_ARRAY_SIZE > 0)
         newCapacity = hugeCapacity(minCapacity);
-    // minCapacity is usually close to size, so this is a win:
     elementData = Arrays.copyOf(elementData, newCapacity);
 }
 
 private static int hugeCapacity(int minCapacity) {
-    if (minCapacity < 0) // overflow
+    if (minCapacity < 0) 
         throw new OutOfMemoryError();
     return (minCapacity > MAX_ARRAY_SIZE) ?
         Integer.MAX_VALUE :
         MAX_ARRAY_SIZE;
 }
 ```  
-
+从源码实现来看 ensureCapacity 方法可以扩大数组空间，默认情况下当数组空间已经不够的时候，数组长度会扩大为原来数组长度的 1.5 倍。当程序员自己设定大小的时候，如果设定的长度比原来数组长度的 1.5 倍小，则将数组扩大到程序员设定的值，反之设置为原来长度的 1.5 倍。  
+在开发时，如果知道长度的情况下，可以先用 ensureCapacity 方法设定足够长的数组长度，避免程序运行时候进行重复的数值扩容操作，提高程序的效率。  
 
 #### trimToSize  
 trimToSize 方法作用是将列表对象的实例容量调整为列表当前大小。  
@@ -257,6 +240,24 @@ if (list instanceof RandomAccess) {
 ```  
 
 #### fail-fast  
+fail-fast 机制还是今天刚刚知道的，所以这个知识对我来说是十分热乎的。fail-fast 是 Java 集合中的一种错误机制。当多个线程对同一个集合的内容进行操作时，就可能会产生 fail-fast 事件，抛出 ConcurrentModificationException 异常。而且 ArrayList 本来就不是线程安全的集合。  
+
+源码：
+```java
+public void replaceAll(UnaryOperator<E> operator) {
+    Objects.requireNonNull(operator);
+    final int expectedModCount = modCount;
+    final int size = this.size;
+    for (int i=0; modCount == expectedModCount && i < size; i++) {
+        elementData[i] = operator.apply((E) elementData[i]);
+    }
+    if (modCount != expectedModCount) {
+        throw new ConcurrentModificationException();
+    }
+    modCount++;
+}
+```  
+从 replaceAll 方法的源码可以知道这个方法也有可能出现 fail-fast 事件。首先这里的 modCount 存储的是当前 ArrayList 对象进行操作的操作数，expectedModCount 是 final 修饰的，也就是说当前情况下 expectedModCount 这个变量的值是不能改变的。那么什么情况下会出现 modCount != expectedModCount 呢？很简单，如果此刻有一个线程对当前这个 ArrayList 对象进行了添加或者删除等操作，modCount 值就变了，就会抛出 ConcurrentModificationException 异常。  
 
 ### LinkedList
 
