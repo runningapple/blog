@@ -189,4 +189,4 @@ public synchronized <T> T[] toArray(T[] a) {
 ```
 
 ### Stack
-Vector 有一个子类 Stack ，就是后进先出（LIFO）的栈。Stack 类有五个自有的方法（empty， peek， pop， push， search）。这五个自有方法的实现都是通过从 Vector 继承过来的方法实现的。  
+Vector 有一个子类 Stack ，就是后进先出（LIFO）的栈。Stack 类有五个自有的方法（empty， peek， pop， push， search）。这五个自有方法的实现都是通过从 Vector 继承过来的方法实现的。  Deque 接口及其实现
