@@ -6,9 +6,7 @@ class Solution {
             if (i > k && candidates[i] == candidates[i-1]) continue;
             if (candidates[i] == x) {
                 list.add(candidates[i]);
-                List<Integer> tmp = new ArrayList<Integer>();
-                tmp.addAll(list);
-                result.add(tmp);
+                result.add(new ArrayList<Integer>(list));
                 list.remove(index);
             } else if (candidates[i] < x) {
                 list.add(candidates[i]);
@@ -21,10 +19,9 @@ class Solution {
     }
 
     public List<List<Integer>> combinationSum2(int[] candidates, int target) {
-        List<Integer> list = new ArrayList<Integer>();
         result = new ArrayList<List<Integer>>();
         Arrays.sort(candidates);
-        DFS(candidates, target, 0, 0, list);
+        DFS(candidates, target, 0, 0, new ArrayList<Integer>());
         return this.result;
     }
 }
