@@ -9,7 +9,7 @@
 * 正则表达式
 * 异常 自定义异常 throw 和 throws
 * 封装 继承 多态 重写 重载 反射
-* 集合 集合遍历 https://docs.oracle.com/javase/8/docs/technotes/guides/collections/overview.html
+* ~~集合 集合遍历~~ https://docs.oracle.com/javase/8/docs/technotes/guides/collections/overview.html
 * 序列化 反序列化
 * 网络编程
 * JAVA8
@@ -28,7 +28,7 @@
     http://graphics.stanford.edu/~seander/bithacks.html#OperationCounting
 * 文件系统 FAT HPFS NTFS EXT NFS
 * List iterator
-* vector arrayList 同步，异步
+* ~~vector arrayList 同步，异步~~
 * 自定义类需要实现hashCode来使用set?
 * 红黑树
 * treeSet 存储自定义对象需要实现 comparable ?
