@@ -1,7 +1,7 @@
 <center><h2>Cookie，WebStorage对比总结</h2></center>
 ******  
  <center>&copy;runningapple</center>
-####Cookie  
+#### Cookie  
 1. **简介**  
 Cookie，指某些网站为了辨别用户身份而存储在用户本地终端上的数据。  
 
@@ -24,7 +24,7 @@ Cookie 一个很典型的应用是在登录一个网站时，网站一般会让�
 
 
 ******
-* ####Web Storage  
+#### Web Storage  
 
 1. **简介**  
 我们现在说的 HTML5 本地存储，一般指的就是 Web Storage 规范。使用 Web Storage，web 应用可以将数据存储在本地浏览器之中。在 HTML5 之前，应用数据被存储在 Cookie 中，包含服务请求里。  
