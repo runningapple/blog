@@ -12,9 +12,10 @@ class Solution {
         ListNode result = new ListNode(0);
         result.next = head;
         ListNode current = result;
+        ListNode first = null, second = null;
         while (current.next != null && current.next.next != null) {
-            ListNode first = current.next;
-            ListNode second = current.next.next;
+            first = current.next;
+            second = current.next.next;
             first.next = second.next;
             current.next = second;
             current.next.next = first;
