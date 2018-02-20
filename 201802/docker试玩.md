@@ -11,7 +11,7 @@ tags: [研发,技术]
 那接下来演示 docker 安装 mysql，并用 Spring jdbctemplate 读写表。  
 1. 首先我们需要安装 docker，如果是 windows7 系统，那就先升到 windows10 吧，不然出现各种乱七八糟到问题。如果是 mac os 最好了，我们直接在官网下载安装就可以了。  
 ![](http://wx3.sinaimg.cn/mw690/ad108d28gy1fomxv62xn8j20o006udgd.jpg)  
-不要被网上一些旧的博客误导了，现在安装 docker 不需要像以前那样要安装什么 toolbox 了。  
+不要被网上一些旧的博客误导了，现在安装 docker 不需要像以前那样要安装 toolbox 了。  
 安装好后打开命令行，输入如下命令，能得到正确回显就说明已经安装正确了。
 ```shell
 lin-desk:~ lin$ docker --version
@@ -51,9 +51,9 @@ lin-desk:~ lin$ docker run -p 3306:3306 --name mysql -v /Users/lin/temp/data:/va
 -v /Users/lin/temp/data:/var/lib//mysql 讲当前主机的temp/data目录挂载到容器的/var/lib/mysql目录。  
 -e MYSQL_ROOT_PASSWORD=123456 初始化 root 用户密码。  
 以上就已经把 mysql 启动了，我们可以进入 mysql 容器查看数据库信息。
-![](http://wx1.sinaimg.cn/mw690/ad108d28gy1fomy5zh5g4g20rw0g2tw5.gif)  
+![](http://i4.bvimg.com/633063/258d20e7e89887a3.gif)  
 
 3. 用 Spring jdbctemplate 读写表
-![](http://wx2.sinaimg.cn/mw690/ad108d28gy1fomycohzghg21ea0q1kjm.gif)  
+![](http://i4.bvimg.com/633063/45fb6c82f39d44a1.gif)  
 
 OK，以上就是 docker 容器配置运行 mysql 的过程了，很简单，当然 docker 能力不限于这么简单一点，还有隔离应用，整合服务器，快速部署等等其它应用场景，以后在演示。
